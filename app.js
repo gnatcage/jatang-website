@@ -1,4 +1,6 @@
 var main = function() {
+    
+    //open the menu
     $('.icon-menu').click(function(){
         $('.menu').animate({
             left: '0px'
@@ -6,6 +8,17 @@ var main = function() {
         
         $('body').animate({
             left: '285px'
+        }, 200);
+    });
+    
+    //close the menu
+    $('.icon-close').click(function(){
+        $('.menu').animate({
+            left:"-285px"
+        }, 200);
+        
+        $('body').animate({
+            left:"0px"
         }, 200);
     });
 };
